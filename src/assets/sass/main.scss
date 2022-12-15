@@ -1,0 +1,43 @@
+// Настройки
+@import "./variables.scss";
+
+// Миксины
+@import "./_mixins/reset.scss";
+@import "./_mixins/container.scss";
+@import "./_mixins/flex.scss";
+
+// Компоненты
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  @include reset-model();
+}
+
+button {
+  @include reset-button();
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+.wrapper {
+  @include wrapper();
+}
+
+.container {
+  @include container();
+}
+
+html,
+body {
+  @include reset-model();
+  min-height: 100vh;
+  background-color: $white;
+  color: $black;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}

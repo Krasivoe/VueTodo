@@ -13,5 +13,13 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-plusplus': 'off',
+    'no-param-reassign': 'warn',
+    'func-names': ['warn', 'never'],
+    'no-unused-expressions': ['error', { allowTernary: true }],
+    'arrow-parens': ['error', 'as-needed'],
+    'vuejs-accessibility/label-has-for': 'off',
+    'vuejs-accessibility/click-events-have-key-events': 'off',
+    'vuejs-accessibility/form-control-has-label': 'off',
   },
 };
